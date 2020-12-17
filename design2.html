@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DESIGN | 스톤헨지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        p {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        img {
+            border: none;
+            /*            이미지링크시 테두리없앰*/
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            /*기본글자크기로 초기화*/
+        }
+
+        body * {
+            box-sizing: border-box;
+            font-size: 1rem;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div img {
+            /*            width: 100%;*/
+            /*            max-width: 100%;*/
+        }
+
+
+
+
+
+        .space {
+            display: none;
+        }
+
+        .wrap {
+            background-color: #fff;
+        }
+
+        /*        메인타이틀*/
+        .section_tit {
+            background: url(images/design2_tit.jpg) no-repeat top center;
+            background-size: cover;
+            width: 100%;
+            max-width: 100%;
+            height: 750px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .section_tit:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+
+
+        .section_txt {
+            letter-spacing: 1px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            z-index: 10;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .section_tit p:first-child,
+        .section_tit p:last-child {
+            font-size: 1rem;
+        }
+
+        .section_tit p:nth-child(2) {
+            font-size: 4.5rem;
+        }
+
+
+
+
+        /*        내용부분*/
+
+        .cont_txt p:first-child {
+            font-size: 3.5rem;
+            font-weight: 400;
+            padding-top: 10rem;
+        }
+
+
+        .cont_txt p:nth-child(2) {
+            padding-top: 0.1rem;
+            font-size: 1.8rem;
+        }
+
+        .cont_txt p:nth-child(3) {
+            padding-top: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            padding-bottom: 2rem;
+            letter-spacing: -0.8px;
+        }
+
+
+
+
+
+        /*툴관련*/
+        .cont_sub>div {
+            display: inline-block;
+            padding-bottom: 2.5rem;
+        }
+
+        .cont_sub ul li {
+            font-size: 1.1rem;
+            padding-bottom: 14px;
+        }
+
+        .cont_tool {
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            padding-right: 60px;
+        }
+
+        .cont_pg {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .cont_tool li {
+            font-weight: 600;
+        }
+
+        .cont_pg li {
+            position: relative;
+        }
+
+
+
+
+
+
+
+        .section_cont {
+
+            margin: 0 auto;
+            width: 1400px;
+            max-width: 100%;
+            position: relative;
+            /*            background: #fff;*/
+        }
+
+        .section_cont img {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+            /*            width: 100%; 이거하면 흐려짐*/
+        }
+
+
+
+
+        /*        미디어쿼리*/
+        @media (max-width: 1023px) {}
+
+        @media (max-width: 991.98px) {
+            .section_tit {
+                height: 650px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+            }
+
+            .section_tit {
+                height: 500px;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+
+            .section_tit p:first-child,
+            .section_tit p:last-child {
+                font-size: 1rem;
+            }
+
+            .section_tit p:nth-child(2) {
+                font-size: 4rem;
+            }
+
+
+
+            /*        내용부분*/
+
+            .cont_txt p:first-child {
+                font-size: 3rem;
+            }
+
+            .cont_txt p:nth-child(2) {
+                font-size: 1.5rem;
+            }
+
+            .cont_txt p:nth-child(3) {
+                font-size: 0.95rem;
+            }
+
+            .cont_tool {
+                padding-right: 20px;
+            }
+
+
+        }
+
+
+
+
+
+        @media screen and (max-width:499px) {
+            .section_tit {
+                height: 350px;
+            }
+
+            .cont_txt p:first-child {
+                padding-top: 6rem;
+            }
+
+            .section_tit p:nth-child(2) {
+                font-size: 3rem;
+            }
+
+            .cont_txt p:nth-child(2) {
+                font-size: 1.2rem;
+            }
+
+            .cont_txt p:nth-child(3) {
+                padding-top: 1rem;
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+
+            .cont_sub ul li {
+                font-size: 0.7rem;
+                padding-bottom: 10px;
+            }
+
+
+            .space {
+                display: inline-block;
+            }
+
+            .n_space {
+                display: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--
+    <div>
+        <img src="images/design_1.jpg">
+    </div>
+-->
+    <div class="wrap">
+        <section class="section_tit">
+            <section class="section_txt">
+                <p>STONE HENGE</p>
+                <p>스톤헨지</p>
+                <p>PC</p>
+            </section>
+        </section>
+
+        <div class="section_cont">
+            <section class="cont_txt">
+                <p>스톤헨지</p>
+                <p>REDESIGN &amp; PUBLISHING</p>
+                <p>쥬얼리 브랜드 스톤헨지의 PC버전 메인페이지 리뉴얼 사이트입니다.<br>
+                    기존 심볼컬러를 활용하여 클래식하고 우아한 브랜드 이미지를 <br class="space">강조하였으며<br class="n_space">
+                    스톤헨지의 뮤즈를 활용하여 <br class="space">상품이 돋보일 수 있도록 구성하였습니다.</p>
+            </section>
+
+
+
+            <div class="cont_sub">
+                <div class="">
+                    <ul class="cont_tool">
+                        <li>TOOL</li>
+                        <li>PAGE</li>
+                    </ul>
+                </div>
+
+
+                <ul class="cont_pg">
+                    <li>PHOTOSHOP,HTML5, CSS3, JQUERY, JAVASCRIPT</li>
+                    <li>Main</li>
+                </ul>
+            </div>
+
+
+            <img src="images/design_22.png">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
